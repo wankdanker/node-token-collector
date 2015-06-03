@@ -1,6 +1,6 @@
 {
   "name": "token-collector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Collect string tokens if they match filters",
   "main": "index.js",
   "scripts": {
