@@ -34,6 +34,55 @@ console.log(tc.get());
 */
 ```
 
+api
+---
+
+
+### constructor
+
+```js
+var tc = require('token-collector')();
+```
+
+### .addFilter(fn)
+
+Add a filter function to which each token is passed. If the function returns `true` then the
+token is added to the collection. If the function returns `false` then the token is discarded.
+
+```js
+//only accept tokens starting with the letter a
+tc.addFilter(function (tok) {
+	return (tok.substr(0,1) === "a")
+});
+```
+
+### .parse(string)
+
+Parse `string` for tokens and add them to the collection if they pass all filters
+
+### .add(string)
+
+Add `string` to the collection if it passes all filters
+
+### .get()
+
+Return an array of token objects that take the form:
+
+```json
+{
+	"token" : "string"
+	, "count" : 1
+}
+```
+
+### .toArray()
+
+Return an array of token strings from the collection
+
+### .toString()
+
+Return a camma separated list of tokens from the collection
+
 license
 -------
 MIT
