@@ -1,0 +1,22 @@
+{
+  "name": "token-collector",
+  "version": "1.0.0",
+  "description": "Collect string tokens if they match filters",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wankdanker/node-token-collector"
+  },
+  "author": "Dan VerWeire",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wankdanker/node-token-collector/issues"
+  },
+  "homepage": "https://github.com/wankdanker/node-token-collector",
+  "devDependencies": {
+    "tape": "^4.0.0"
+  }
+}
